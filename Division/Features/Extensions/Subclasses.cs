@@ -9,9 +9,6 @@ namespace Division.Features.Extensions
     {
         public static string ToYaml(this Subclass subclass)
         {
-            Log.Info($"{subclass.Name} to yaml");
-            
-            
             return YamlManager.Serializer.Serialize(subclass);
         }
         
