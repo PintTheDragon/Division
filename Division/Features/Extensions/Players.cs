@@ -25,7 +25,7 @@ namespace Division.Features.Extensions
             
             // Appearance Options
             if (!string.IsNullOrWhiteSpace(subclass.AppearanceOptions.InfoText))
-                player.CustomInfo = string.IsNullOrWhiteSpace(subclass.AppearanceOptions.InfoColor) ? subclass.AppearanceOptions.InfoText : $"<color={subclass.AppearanceOptions.InfoText}{subclass.AppearanceOptions.InfoText}</color>";
+                player.CustomInfo = string.IsNullOrWhiteSpace(subclass.AppearanceOptions.InfoColor) ? subclass.AppearanceOptions.InfoText : $"<color={subclass.AppearanceOptions.InfoColor}{subclass.AppearanceOptions.InfoText}</color>";
 
             Timing.CallDelayed(2.75f, () =>
             {
